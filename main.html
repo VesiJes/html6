@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(245, 238, 230);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        border-collapse: collapse;
+        width: 50%;
+        min-width: 600px;
+        border: 6px solid black;
+    }
+    th, td{
+        padding: 10px;
+        text-align: center;
+        border: 1px solid black
+    }
+    thead{
+        position: sticky;
+        top: 0px;
+        background: #8fb7c5;
+        z-index: 2;
+    }
+    th:first-child,
+    td:first-child{
+        position: sticky;
+        left: 0;
+        background: #8fb7c5;
+        z-index: 1;
+    }  
+    thead th:first-child{
+        z-index: 3;
+    }
+    tbody tr:nth-child(odd) td:not(:first-child) {
+    background: #eee;
+  }
+
+  tbody tr:nth-child(even) td:not(:first-child) {
+    background: #ddd;
+  }
+</style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>header 5</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>line 1 </th>
+                <th>l34</th>
+                <th>74</th>
+                <th>25</th>
+                <th>96</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <th>line 2</th>
+                <th>34</th>
+                <th>85</th>
+                <th>24</th>
+                <th>74</th>
+                <th>42</th>
+            </tr>
+            <tr>
+                <th>line 3</th>
+                <th>34</th>
+                <th>85</th>
+                <th>24</th>
+                <th>74</th>
+                <th>42</th>
+            </tr>
+            <tr>
+                <th>line 4</th>
+                <th>34</th>
+                <th>85</th>
+                <th>24</th>
+                <th>74</th>
+                <th>42</th>
+            </tr>
+            <tr>
+                <th>line 5</th>
+                <th>34</th>
+                <th>85</th>
+                <th>24</th>
+                <th>74</th>
+                <th>42</th>
+            </tr>
+            <tr>
+                <th>line 6</th>
+                <th>34</th>
+                <th>85</th>
+                <th>24</th>
+                <th>74</th>
+                <th>42</th>
+            </tr>
+            <tr>
+                <th>line 7</th>
+                <th>34</th>
+                <th>85</th>
+                <th>24</th>
+                <th>74</th>
+                <th>42</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
